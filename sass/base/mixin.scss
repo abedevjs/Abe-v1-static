@@ -1,0 +1,56 @@
+/*
+//*NEW VERSION
+Below 1344px Smaller PC
+max-width: 84em
+
+Below 1200px Landscape Tablets
+max-width: 75em
+html: font-size 56.25% //9px/16px = 0.5625 = 56.25%
+
+Below 944px Tablets
+max-width: 59em
+html: font-size 50% // 8px/16px = 0.5 = 50%
+
+Below 500px Phone
+max-width: 31.25em // 500px/16px = 31.25
+
+Below 400px Small Phone
+max-width: 34em // 400px/16px = 34.25
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==small-phone5 {
+        @media only screen and (max-width: 25em) {
+            //400px
+            @content;
+        }
+    }
+
+    @if $breakpoint==phone4 {
+        @media only screen and (max-width: 31.25em) {
+            //500px
+            @content;
+        }
+    }
+
+    @if $breakpoint==tab-port3 {
+        @media only screen and (max-width: 56.25em) {
+            //900px
+            @content;
+        }
+    }
+
+    @if $breakpoint==tab-land2 {
+        @media only screen and (max-width: 75em) {
+            //1200px
+            @content;
+        }
+    }
+
+    @if $breakpoint==big-desktop1 {
+        @media only screen and (min-width: 112.5em) {
+            //1800
+            @content;
+        }
+    }
+}
