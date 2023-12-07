@@ -92,7 +92,7 @@ body {
       font-size: 2rem; }
   .profile__location, .profile__job, .profile__contacts {
     display: flex;
-    gap: .5rem; }
+    gap: 0.5rem; }
   .profile__location, .profile__job {
     align-items: center; }
     .profile__location svg, .profile__job svg {
@@ -100,19 +100,20 @@ body {
       width: 2rem; }
   .profile__contacts {
     align-items: center;
-    justify-content: end; }
+    justify-content: end;
+    transition-duration: 300ms; }
     .profile__contacts a {
       text-decoration: none;
-      margin-right: .5rem;
+      margin-right: 0.5rem;
       display: flex;
       align-items: center; }
       .profile__contacts a svg {
         height: 3rem;
         width: 3rem;
         color: green;
-        transition: all .2s; }
+        transition: all 0.2s; }
       .profile__contacts a:hover {
-        transform: scale(0.8); }
+        transform: scale(0.95); }
 
 .line {
   display: block;
@@ -154,6 +155,7 @@ body {
       font-size: 2rem; }
     .features__porto--link {
       padding-left: 2rem;
+      transition-duration: 300ms;
       display: flex;
       align-items: center;
       justify-content: start;
@@ -162,10 +164,10 @@ body {
         text-decoration: none;
         border: 0;
         cursor: pointer;
-        transition: all .2s; }
+        transition: all 0.2s; }
         .features__porto--link a img {
           border-radius: 3px;
           height: 8rem;
           width: 16rem; }
         .features__porto--link a:hover {
-          transform: scale(0.8); }
+          transform: scale(0.95); }
